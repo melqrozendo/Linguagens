@@ -30,4 +30,11 @@ Obs: O editor de VScode é generalista, um arquivo em .py é modulo python
 # comentarios nos modulos.py
 """
 DocString
+
 """
+
+*******SOBRE DEPENDENCIAS*******
+1. Gerar a lista de dependências: Sempre que instalar algo novo, rode:
+<requirements.txt>
+2. Subir para o GitHub: O arquivo requirements.txt deve ser subido. É através dele que outros desenvolvedores saberão o que instalar 
+### pip install -r requirements.txt.
