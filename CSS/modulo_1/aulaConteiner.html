@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }
+
+        .item {
+            margin: 5px;
+            padding: 5px;
+            background: #447;
+            text-align: center;
+            font-size: 1em;
+            color: #fff;
+            height: 30px;
+            width: calc(33.3% - 20px);
+        }
+
+        .container{
+            max-width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+
+        .flexivel {
+            display: flex;
+        }
+
+        .horizontal {
+            flex-direction: row;
+        }
+
+        .vertical {
+            flex-direction: column;
+        }
+
+        .quebra {
+            flex-wrap: wrap;
+        }
+
+        .alinhar {
+            justify-content: center;
+            /* align-items: center; */
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container flexivel horizontal quebra alinhar">
+        <div class="item">Aula de CSS 01</div>
+        <div class="item">Aula de CSS 02</div>
+        <div class="item">Aula de CSS 03</div>
+        <div class="item">Aula de CSS 04</div>
+        <div class="item">Aula de CSS 05</div>
+        <div class="item">Aula de CSS 06</div>
+    </div>
+</body>
+</html>

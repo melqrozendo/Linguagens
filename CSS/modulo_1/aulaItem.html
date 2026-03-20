@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }
+
+        .item {
+            margin: 5px;
+            padding: 5px;
+            background: #447;
+            text-align: center;
+            font-size: 1em;
+            color: #fff;
+            /* height: 30px;
+            width: calc(33.3% - 20px); */
+            width: 200px;
+        }
+
+        .tam0{
+            flex-grow: 0;
+        }
+
+        .tam1{
+            flex-grow: 1;
+        }
+
+        .tam2{
+            flex-grow: 2;
+        }
+
+        .baseA{
+            flex-basis: auto;
+        }
+
+        .base0{
+            flex-basis: 0;
+        }
+
+        .base1{
+            flex-basis: 1;
+        }
+
+        .ordem0{
+            order: 0;
+        }
+
+        .ordem1{
+            order: 1;
+        }
+
+        .reduzir0{
+            flex-shrink: 0;
+        }
+
+        .reduzir1{
+            flex-shrink: 1;
+        }
+        
+        .reduzir2{
+            flex-shrink: 2;
+        }
+
+        .reduzir3{
+            flex-shrink: 3;
+        }
+
+        .flex{
+            flex: 1;
+        }
+
+        .top{
+            align-self: flex-start;
+        }
+
+        .bottom{
+            align-self: flex-end;
+        }
+
+        .container{
+            max-width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+
+        .flexivel {
+            display: flex;
+        }
+
+        .horizontal {
+            flex-direction: row;
+        }
+
+        .vertical {
+            flex-direction: column;
+        }
+
+        /* .quebra {
+            flex-wrap: wrap;
+        } */
+
+        .alinhar {
+            justify-content: center;
+            /* align-content: space-between; */
+            align-items: center;
+            /* align-content: center; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container flexivel horizontal alinhar">
+        <!-- <div class="item tam1 base0">Aula 01</div>
+        <div class="item tam1 base0">Aula de CSS</div>
+        <div class="item tam1 base0 ordem1">Aula de CSS 03</div>
+        <div class="item tam1 base0 ordem0">Aula de CSS 04 Aula de CSS 04</div> -->
+        <!-- <div class="item tam1 reduzir0">Aula de CSS 01</div>
+        <div class="item tam1 reduzir1">Aula de CSS 02</div>
+        <div class="item tam1 reduzir2">Aula de CSS 03</div>
+        <div class="item tam1 reduzir3">Aula de CSS 04</div> -->
+        <div class="item flex top">Aula de CSS 01</div>
+        <div class="item flex">Aula de CSS 02</div>
+        <div class="item flex">Aula de CSS 03</div>
+        <div class="item flex bottom">Aula de CSS 04</div>
+    </div>
+</body>
+</html>
