@@ -1,0 +1,50 @@
+<!--
+Declarando variaveis no JS
+
+Veja o window.prompt():
+Sempre retorna uma string, mesmo se um numero for digitado
+
+Assim, deve inserir no codigo(ao que force/manipule o valor de string para number):
+
+#Conversoes de tipo: (string -> numero)
+Number.parseInt(n)
+Number.parseFloat(n)
+Number(n)
+
+#Conversoes de tipo: (number -> string)
+String(n)
+n.toSting
+
+Formatando String em JavaScript:
+var s = 'javascript'
+
+'Eu estou aprendendo s'     // não faz interpolação
+'Eu estou aprendendo' + s   //usa concatenação
+`Eu estou aprendendo ${s}`  //usa template string
+
+s.length            //quantos caracters a string tem
+s.toUpperCase()     //tudo para 'MAIÚSCULAS'
+s.toLowerCase()     //tudo para "minúsculas"
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um numero:'))//converter string para inteiro
+        var n2 = Number.parseInt(window.prompt('Digite outro numero'))//converter string para inteiro
+        var soma = n1 + n2 //o codigo vai ler essas variaveis como string
+        //window.alert('A soma dos valores é '+ soma)//concatenação
+        //window.alert('A soma dos valores é ' +soma.toString)// convertendo inteiro para string
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) // usando template string
+
+
+
+    </script>
+</body>
+</html>

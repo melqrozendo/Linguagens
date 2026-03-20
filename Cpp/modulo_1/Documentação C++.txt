@@ -1,0 +1,26 @@
+Documentação C++:
+linguagem de programação C++
+Dispositivos de hardware:
+HD-CPU-RAM-Sistema Operacional (gerencia todo o sistema)
+Etapas de programação:
+1-codificamos
+2-compilamos (convertemos a linguagem de alto nivel em baixo nivel)
+3-geramos o executavel
+
+Conceito do [computador simplificado]
+
+C++ é uma extensão do C
+C++
+-multiparadigma
+-linguagem imperativa
+-orientada a objetos e generica
+
+IDEs e compiladores C/C++
+-Visual Code
+Baixar extensao c/c++
+baixar compilador MinGW (Minimalist GNU for Windows) conjunto de ambiente de desenvolvimento
+para aplicações no Windows
+-Code::Blocks
+-Dev C++
+
+

@@ -1,0 +1,79 @@
+<!--
+Entendendo o DOM:
+
+Document Object Model
+Arvore DOM
+Manipulando DOM
+
+#
+Baixar pelo vscode {extension}
+Live Server:
+Depois de instalar a extensão live server
+
+ Vá na aba que tem aqueles papeizinhos e clique com o botão direito no arquivo que você quiser abrir com o live server e aperte em "open with live server". 
+
+Node.js exec
+#
+O que é DOM: (Document Object Model)
+Conjunto de objetos dentro do navegador que da acesso aos componentes internos do website
+Veja!
+O DOM não funciona dentro do nodejs.
+
+Árvore DOM: (inicia pelo objeto-raiz)
+#
+window (janela do navegador)
+    location (informa a localização do seu site [url])
+    document (documento atual)
+    history (relacionado a navegação detro do site)
+#
+document (documento atual)
+    html
+        head (cabeçalho)
+            meta
+            title
+        body (corpo)
+            h1
+            p
+            p [strong]
+            div
+#
+Obs: acima montamos a arvore do documento atual
+Obs: todos os objetos PAIS/FILHOS acima do DOM são chamdos de elementos
+
+Os elementos podem ser selecionados por:
+1- Marca
+2- ID
+3- Nome
+4- Classe
+5- Seletor
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background: rebeccapurple;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div>Clique em mim</div>
+    <script>
+        window.document.write('ola, mundo! </br>')// escrevendo componente na janela
+        window.document.write(window.navigator.appName + '</br>')// tipo de navegador
+        window.document.write(window.document.URL + '</br>')// buscando url
+
+    </script>
+
+    
+</body>
+</html>

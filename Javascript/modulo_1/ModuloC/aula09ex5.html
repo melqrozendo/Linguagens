@@ -1,0 +1,69 @@
+<!--
+Árvore DOM: (inicia pelo objeto-raiz)
+#
+window (janela do navegador)
+    location (informa a localização do seu site [url])
+    document (documento atual)
+    history (relacionado a navegação detro do site)
+#
+document (documento atual)
+    html
+        head (cabeçalho)
+            meta
+            title
+        body (corpo)
+            h1
+            p
+            p [strong]
+            div
+#
+Obs: acima montamos a arvore do documento atual
+Obs: todos os objetos PAIS/FILHOS acima do DOM são chamdos de elementos
+
+Os elementos podem ser selecionados por:
+1- Marca
+comando: getElementsByTagName()[]
+2- ID
+comando: getElementById()
+3- Nome
+comando: getElementsByName()[]
+4- Classe
+comando: getElementsByClassName()[]
+5- Seletor
+comando1: querySelector()
+comando2: querySelectorAll() 
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background: rebeccapurple;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg1">Selector por ID</div>
+    <div class="msg2">Selector por Class</div>
+
+    <script>
+        //Testando elementos selecionados por SELECTOR:
+        
+        var s = window.document.querySelector('div#msg1')
+        s.style.color = 'orange'
+        var p = window.document.querySelector('div.msg2')
+        p.style.color = 'brown'
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!--
+
+Formatando String em JavaScript:
+var s = 'javascript'
+
+s.length            //quantos caracters a string tem
+s.toUpperCase()     //tudo para 'MAIÚSCULAS'
+s.toLowerCase()     //tudo para "minúsculas"
+
+Formatando number em JavaScript:
+var n1 = 1545.5
+
+n1.toFixed(2)   //adicionar duas casas decimais
+n1.toFixed(2).replace('.', ',') //converter . para ,
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //adiciornar valor monetario
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR.exit'})
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de dados</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome:')
+        document.write(`Ola, ${nome}! Seu nome tem ${nome.length} letras. </br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()} </br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toLowerCase()}`)
+    </script>
+    
+</body>
+</html>

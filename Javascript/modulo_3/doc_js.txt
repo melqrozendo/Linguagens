@@ -1,0 +1,17 @@
+Documentação sobre JS antes do Frameworks
+https://www.origamid.com/slide/youtube/#/0101-javascript-antes-do-framework/8
+
+Topicos:
+
+1-Tudo é objeto
+2-Arrow Function~
+3-Destructuring
+4-Rest e Spread
+5-Module (Export/Import)
+6-Fetch
+7-Async / Await
+8-Arrays (map, filter, reduce)
+9-Class
+10-Expressões
+
+

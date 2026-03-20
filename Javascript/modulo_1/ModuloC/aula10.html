@@ -1,0 +1,76 @@
+<!--
+Criando Eventos DOM (Document Object Model):
+
+Evento: é tudo aquilo que possa acontecer com exemplo uma <div>
+
+Exemplo de evento com mouse:
+
+-mouseenter
+-mousemove
+-mousedown
+-mouseup
+-click
+-mouseout
+
+Event reference: https://developer.mozilla.org/pt-BR/docs/Web/Events
+
+Função: conjunto de codigos que são executadas quanto o evento ocorrer
+sintaxe:
+function ação (<parametros>) {
+
+}
+
+Detecção de erro:
+clicar em inspensionar no navegador
+
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            background: rgb(74, 108, 22);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--adicionando eventos no proprio componente do DOM-->
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        OK
+    </div>
+
+    <script>
+        //a = variavel global
+        var a = window.document.getElementById('area')
+        //adicionando eventos no script
+        /*
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        */
+
+        function clicar(){
+            //a = variavel local
+            //var a = window.document.getElementById('area')
+            a.innerText = 'Click!'
+            a.style.background = 'red'
+        }
+        function entrar(){
+            a.innerText = 'Entrou!'
+        }
+        function sair(){
+            a.innerText = 'Saiu!'
+        }
+    </script>
+    
+</body>
+</html>
